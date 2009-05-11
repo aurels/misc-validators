@@ -1,0 +1,20 @@
+== MiscValidators
+
+A compilation of simple validators we need in most rails apps (AR based).
+
+== Examples
+
+Validation of an email address:
+
+	class MyModel < ActiveRecord::Base
+		validates_email :my_email_field
+	end
+
+Validation of an URL:
+
+	class MyModel < ActiveRecord::Base
+		validates_url :my_url_field
+	end
+
+
+Copyright (c) 2009 Aurélien Malisart, released under the MIT license
