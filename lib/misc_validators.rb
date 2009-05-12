@@ -15,7 +15,7 @@ module ActiveRecord
       def validates_url(field_sym, options = {})
         validates_format_of(field_sym,
           options.merge(
-            :with => /^(http|https):\/\/[a-z0-9]+([-.]{1}[a-z0-9]+)*.[a-z]{2,5}(([0-9]{1,5})?/.*)?$/ix
+            :with => /^(http|https):\/\/[a-z0-9]+([-.]{1}[a-z0-9]+)*.[a-z]{2,5}(([0-9]{1,5})?\/.*)?$/ix
           ))
       end
     end
