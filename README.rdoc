@@ -18,6 +18,13 @@ Validation of an URL:
 
 == Installation
 
+As a gem:
+
+  sudo sources -a http://gems.github.com
+  sudo gem install aurels-misc_validators
+
+As a plugin in your app:
+
   script/plugin install git://github.com/aurels/misc_validators.git
 
 Copyright (c) 2009 Aurélien Malisart, released under the MIT license

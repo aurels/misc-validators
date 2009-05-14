@@ -1,0 +1,11 @@
+init.rb
+install.rb
+lib/misc_validators.rb
+MIT-LICENSE
+Rakefile
+README.rdoc
+tasks/misc_validators_tasks.rake
+test/misc_validators_test.rb
+test/test_helper.rb
+uninstall.rb
+Manifest

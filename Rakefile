@@ -1,6 +1,8 @@
+require 'rubygems'
 require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
+require 'echoe'
 
 desc 'Default: run unit tests.'
 task :default => :test
@@ -21,3 +23,14 @@ Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('README')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+
+Echoe.new('misc_validators', '0.1') do |p|
+  p.description = 'A collection of misc usefull validators for ActiveRecord::Base'
+  p.url         = 'http://github.com/aurels/misc_validators'
+  p.author      = 'Aurélien Malisart'
+  p.email       = 'aurelien.malisart@gmail.com'
+  p.ignore_pattern = ["tmp/*", "script/*"]
+  p.development_dependencies = []
+end
+
+Dir["#{File.dirname(__FILE__)}/tasks/*.rake"].sort.each { |ext| load ext }
