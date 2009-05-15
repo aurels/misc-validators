@@ -27,4 +27,8 @@ As a plugin in your app:
 
   script/plugin install git://github.com/aurels/misc_validators.git
 
+If you wanna run the tests (Test::Unit):
+
+  rake test
+
 Copyright (c) 2009 Aurélien Malisart, released under the MIT license
