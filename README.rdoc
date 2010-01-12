@@ -22,6 +22,10 @@ As a gem from Gemcutter :
 
   sudo gem install misc_validators
 
+As a plugin :
+
+  script/plugin install git://github.com/aurels/misc_validators.git
+
 == Tests
 
 If you wanna run the tests (Test::Unit) :

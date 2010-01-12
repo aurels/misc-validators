@@ -1,15 +1,13 @@
 require 'rubygems'
 require 'rake'
-require 'rake/testtask'
-require 'rake/rdoctask'
-
-desc 'Default: run unit tests.'
-task :default => :test
-
-desc 'Test the misc_validators plugin.'
-Rake::TestTask.new(:test) do |t|
-  t.libs << 'lib'
-  t.libs << 'test'
-  t.pattern = 'test/**/*_test.rb'
-  t.verbose = true
+require 'spec/rake/spectask'
+ 
+spec_files = Rake::FileList["spec/**/*_spec.rb"]
+ 
+desc "Run specs"
+Spec::Rake::SpecTask.new do |t|
+  t.spec_files = spec_files
+  t.spec_opts = ["-c"]
 end
+ 
+task :default => :spec

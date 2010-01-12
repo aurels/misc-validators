@@ -1,10 +1,11 @@
 require 'rubygems'
-require 'test/unit'
+require 'spec'
 require 'active_support'
-require 'active_support/test_case'
-require 'activerecord'
-require 'init'
-
+require 'active_record'
+# require 'action_controller'
+# require 'action_view'
+require File.dirname(__FILE__) + '/../lib/misc_validators.rb'
+ 
 # ActiveRecord setup ===========================================================
 
 ActiveRecord::Base.establish_connection({
@@ -31,8 +32,3 @@ end
 class Bookmark < ActiveRecord::Base  
   validates_url :url
 end
-
-# Units tests ==================================================================
-
-require 'unit/validates_email_test'
-require 'unit/validates_url_test'
