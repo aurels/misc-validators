@@ -22,6 +22,8 @@ As a gem from Gemcutter :
 
   sudo gem install misc_validators
 
+== Tests
+
 If you wanna run the tests (Test::Unit) :
 
   rake test
