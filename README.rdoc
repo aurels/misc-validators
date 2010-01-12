@@ -28,8 +28,8 @@ As a plugin :
 
 == Tests
 
-If you wanna run the tests (Test::Unit) :
+If you wanna run the tests :
 
-  rake test
+  rake spec
 
 Copyright (c) 2009 Aurélien Malisart, released under the MIT license
