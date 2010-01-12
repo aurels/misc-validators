@@ -4,13 +4,13 @@ A compilation of simple validators we need in most rails apps (AR based).
 
 == Examples
 
-Validation of an email address:
+Validation of an email address :
 
   class MyModel < ActiveRecord::Base
     validates_email :my_email_field
   end
 
-Validation of an URL:
+Validation of an URL :
 
   class MyModel < ActiveRecord::Base
     validates_url :my_url_field
@@ -18,16 +18,11 @@ Validation of an URL:
 
 == Installation
 
-As a gem:
+As a gem from Gemcutter :
 
-  sudo sources -a http://gems.github.com
-  sudo gem install aurels-misc_validators
+  sudo gem install misc_validators
 
-As a plugin in your app:
-
-  script/plugin install git://github.com/aurels/misc_validators.git
-
-If you wanna run the tests (Test::Unit):
+If you wanna run the tests (Test::Unit) :
 
   rake test
 
