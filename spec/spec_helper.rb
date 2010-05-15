@@ -4,7 +4,6 @@ require 'active_support'
 require 'active_record'
 require 'action_controller'
 require 'action_view'
-#require 'spec/rails'
 
 require File.dirname(__FILE__) + '/../lib/misc_validators.rb'
  
