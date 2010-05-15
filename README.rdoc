@@ -4,7 +4,7 @@ A compilation of simple validators we need in most rails apps (AR based).
 
 Note : This gem is Rails 2.x compatible only. If you're looking for the same
 functionnality for Rails 3, take a look at my :
-http://github.com/aurels/more_validators
+http://github.com/aurels/extra_validators
 
 == Examples
 
